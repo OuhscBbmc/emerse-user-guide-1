@@ -295,6 +295,7 @@ Let's find all mentions of medications for one specific patient:
 1. Enter one patient's MRN (medical record number)
 1. Click **Add Patients**
 1. Click **Done**
+1. Click **Highlight Documents**
 
 ### Search for Medications
 1. Click **Terms**
