@@ -131,35 +131,37 @@ Now we want patients who have diabetes AND are on insulin:
 
 > **What this means:** Find patients with (diabetes OR DM OR diabetic) AND (insulin OR lantus OR humalog OR novolog)
 
-### Step 8: Exclude Hyperglycemia-Only Patients
+### Exclude Hyperglycemia-Only Patients
 To exclude certain patients, we'll use the Exclude feature:
 
-1. Type: `hyperglycemia`
+1. Type: `gestational`
 1. Look for the **Exclude Note** checkbox below the term entry
 1. Check **Exclude Note**
 1. Press **Enter**
 1. The term appears with a special "X" indicator
+<img src = 'images/quick-start/exclude-note.png'>
+<img src = 'images/quick-start/not-term-diabetic.png'>
 
-> **What this means:** Exclude any documents that mention hyperglycemia
+> **What this means:** Exclude any documents that mention gestational
 
-### Step 9: Review Your Search Logic
+### Review Your Search Logic
 Your terms should now look like:
 - 🟢 Green terms: `diabetes`, `DM`, `diabetic` (OR logic)
 - 🔵 Blue terms: `insulin`, `lantus`, `humalog`, `novolog` (OR logic)
-- ❌ Excluded: `hyperglycemia`
+- ❌ Excluded: `gestational`
+<img src = 'images/quick-start/combined-terms.png'>
 
-**Translation:** Find patients who have (any diabetes term) AND (any insulin term) but NOT hyperglycemia
+**Translation:** Find patients who have (any diabetes term) AND (any insulin term) but NOT gestational diabetes
 
-### Step 10: Run Your First Search
+### Run Your First Search
 1. Click **Find Patients** (usually a green button)
 1. Wait for results (this may take a few seconds)
 
-### Step 11: Understanding Your Results
+### Understanding Your Results
 You'll see four sections:
 
 **Top Section - Patient Count:**
-- Shows total number of patients found
-- Example: "Found 2,847 patients"
+- Shows total number of patients found (Example: "Found 2,847 patients")
 
 **Summaries Tab:**
 - Shows snippets of text where your terms were found
@@ -178,20 +180,20 @@ You'll see four sections:
 
 ## Part 4: Working with Your Found Patients
 
-### Step 12: Save Your Patient List
-1. Click **Move to Temporary Patient List**
-1. Your patients are now in a working list
+### Save Your Patient List
+1. Click **Move to Temporary Patient List** to save patients to a working list
 1. To save permanently:
    - Click **Save**
-   - Enter a name like "Diabetes Patients on Insulin Nov 2024"
-   - Add a description
+   - Enter a descriptive name like "Diabetes Patients on Insulin Nov 2024"
+   - Add a description of search logic in 'Description' box
    - Click **Save**
+<img src = 'images/quick-start/save-patient-list.png'>
 
 ### List Types Explained:
 - **Temporary Lists:** Deleted when you log out, cannot be shared
 - **Saved Lists:** Permanent, can be shared with team members
 
-### Step 13: Look at Individual Patient Records (Highlight Documents)
+### Look at Individual Patient Records (Highlight Documents)
 Now let's review specific patient documents:
 
 1. Make sure your patient list is selected
@@ -200,26 +202,28 @@ Now let's review specific patient documents:
 1. Click **Highlight Documents** (instead of Find Patients)
 1. Wait for the results
 
-### Step 14: Navigate the Overview Table
+### Navigate the Overview Table
 You'll see a table where:
 - Each **row** = one patient
 - Each **column** = type of document (Progress Notes, Radiology, etc.)
 - **Numbers** in cells = "matches found / total documents"
 
-Example: "5 of 23" means 5 documents mentioned your terms out of 23 total documents
+> Example: "5 of 23" means 5 documents mentioned your terms out of 23 total documents
+<img src = 'images/quick-start/overview-table.png'>
 
 **Visual Options:**
 - **Numbers:** Toggle to show counts for all cells
 - **Grayscale:** Darker = more documents with hits
 - **Mosaic:** Color grid showing which terms appear
+<img src = 'images/quick-start/visual-options.png'> <img src = 'images/quick-start/mosaic.png'>
 
-### Step 15: Drill Down to See Actual Notes
+### Drill Down to See Actual Notes
 1. Click on any cell with numbers (like "5 of 23")
 1. You'll see a list of those 5 documents with previews (Summaries)
 1. Click on any document row to read the full note
 1. Your search terms are highlighted in their assigned colors
 
-### Step 16: Navigate Between Documents
+### Navigate Between Documents
 While viewing a document:
 - Click **Next Document** to move forward
 - Click **Previous Document** to go back
@@ -228,7 +232,7 @@ While viewing a document:
   - `<` and `>` for documents
   - Arrow keys for patients
 
-### Step 17: Understanding Document Annotations
+### Understanding Document Annotations
 Above each document, you'll see options to view:
 
 **Semantic Groups** (click to highlight):
