@@ -1,4 +1,3 @@
-    
 <img src="images/quick-start/EMERSE_logo_FINAL.png" alt="emerse logo" style="width:50%;">
 
 Quick Start Guide for OU Users of EMERSE
@@ -17,19 +16,24 @@ Quick Start Guide for OU Users of EMERSE
 ## Part 1: Getting Into EMERSE
 
 ### Get Your Account
+
 Before you can use EMERSE, you need access:
+
 1. Contact your EMERSE administrator (email bbmc@ouhsc.edu)
 1. Get IRB approval if doing research
 1. Have OU Health credentials to log in on an OU Health machine/a machine on the OU Health network (including having Imprivata 2-factor authentication configured)
 
 ### Log In
+
 1. Open your web browser
 1. Go to the OU Health Campus EMERSE website ["oumlpappers01:8080/emerse"](oumlpappers01:8080/emerse)
 1. Enter your username and password
 1. Click **Login**
+
 <img src = "images/quick-start/emerse-login.png">
 
 ### Tell EMERSE Why You're Here (Attestation)
+
 The first screen asks why you're using EMERSE today:
 
 1. Choose ption relevant to your reason for use:
@@ -42,6 +46,7 @@ The first screen asks why you're using EMERSE today:
 1. Click **Submit**
 
 > **Note:** This gets recorded for security. If you need to change it, you'll have to log out and start over.
+
 <img src = "images/quick-start/attestation.png">
 
 ---
@@ -81,12 +86,14 @@ EMERSE uses logical operators similar to database queries:
 Let's find patients who have diabetes AND are on insulin, but NOT those with just hyperglycemia.
 
 ### Choose Who to Search
+
 1. Look at the top of the screen for the **Patients** button
 1. Click **Patients** 
 1. Select **All Local Patients**
 1. You'll see "All Local Patients" appear at the top with a number (total patients in system)
 
 ### Enter Your Diabetes Terms (OR Logic)
+
 1. Click the **Terms** button at the top
 1. In the box "Enter Terms/Phrases (one at a time)":
 1. Type: `diabetes`
@@ -96,11 +103,14 @@ Let's find patients who have diabetes AND are on insulin, but NOT those with jus
 1. Press **Enter** - it should also be green
 1. Type: `diabetic`
 1. Press **Enter** - should also be green
-<img src = 'images/quick-start/new-term-diabetic.png'> <img src = 'images/quick-start/or-terms-diabetes.png'>
+
+<img src = 'images/quick-start/new-term-diabetic.png'>
+<img src = 'images/quick-start/or-terms-diabetes.png'>
 
 > **What this means:** Find patients with "diabetes" OR "DM" OR "diabetic"
 
 ### Add More Related Terms Using Synonyms
+
 Let's make our search better by adding related terms:
 
 1. Look for a **Synonyms** button under your "diabetes" bubble
@@ -117,6 +127,7 @@ Let's make our search better by adding related terms:
 1. Close the synonyms window
 
 ### Add Insulin Terms (AND Logic)
+
 Now we want patients who have diabetes AND are on insulin:
 
 1. Type: `insulin`
@@ -132,6 +143,7 @@ Now we want patients who have diabetes AND are on insulin:
 > **What this means:** Find patients with (diabetes OR DM OR diabetic) AND (insulin OR lantus OR humalog OR novolog)
 
 ### Exclude Hyperglycemia-Only Patients
+
 To exclude certain patients, we'll use the Exclude feature:
 
 1. Type: `gestational`
@@ -139,25 +151,30 @@ To exclude certain patients, we'll use the Exclude feature:
 1. Check **Exclude Note**
 1. Press **Enter**
 1. The term appears with a special "X" indicator
+
 <img src = 'images/quick-start/exclude-note.png'>
 <img src = 'images/quick-start/not-term-diabetic.png'>
 
 > **What this means:** Exclude any documents that mention gestational
 
 ### Review Your Search Logic
+
 Your terms should now look like:
 - 🟢 Green terms: `diabetes`, `DM`, `diabetic` (OR logic)
 - 🔵 Blue terms: `insulin`, `lantus`, `humalog`, `novolog` (OR logic)
 - ❌ Excluded: `gestational`
+
 <img src = 'images/quick-start/combined-terms.png'>
 
 **Translation:** Find patients who have (any diabetes term) AND (any insulin term) but NOT gestational diabetes
 
 ### Run Your First Search
+
 1. Click **Find Patients** (usually a green button)
 1. Wait for results (this may take a few seconds)
 
 ### Understanding Your Results
+
 You'll see four sections:
 
 **Top Section - Patient Count:**
@@ -187,13 +204,16 @@ You'll see four sections:
    - Enter a descriptive name like "Diabetes Patients on Insulin Nov 2024"
    - Add a description of search logic in 'Description' box
    - Click **Save**
+
 <img src = 'images/quick-start/save-patient-list.png'>
 
 ### List Types Explained:
+
 - **Temporary Lists:** Deleted when you log out, cannot be shared
 - **Saved Lists:** Permanent, can be shared with team members
 
 ### Look at Individual Patient Records (Highlight Documents)
+
 Now let's review specific patient documents:
 
 1. Make sure your patient list is selected
@@ -203,21 +223,27 @@ Now let's review specific patient documents:
 1. Wait for the results
 
 ### Navigate the Overview Table
+
 You'll see a table where:
+
 - Each **row** = one patient
 - Each **column** = type of document (Progress Notes, Radiology, etc.)
 - **Numbers** in cells = "matches found / total documents"
 
 > Example: "5 of 23" means 5 documents mentioned your terms out of 23 total documents
+
 <img src = 'images/quick-start/overview-table.png'>
 
 **Visual Options:**
 - **Numbers:** Toggle to show counts for all cells
 - **Grayscale:** Darker = more documents with hits
 - **Mosaic:** Color grid showing which terms appear
-<img src = 'images/quick-start/visual-options.png'> <img src = 'images/quick-start/mosaic.png'>
+
+<img src = 'images/quick-start/visual-options.png'>
+<img src = 'images/quick-start/mosaic.png'>
 
 ### Drill Down to See Actual Notes
+
 1. Click on a 'Main EHR' cell in 'Overview' table
 1. You'll see a list of documents with previews (Summaries)
 1. Click on any document row to read the full note
@@ -226,6 +252,7 @@ You'll see a table where:
 > Hint: Use 'Mosaic' view to look for notes with specific terms or combinations of terms highlighted.
 
 ### Navigate Between Documents
+
 While viewing a document:
 - Click **Next Document** to move forward
 - Click **Previous Document** to go back
@@ -235,15 +262,18 @@ While viewing a document:
   - Arrow keys for patients
 
 ### Understanding Document Annotations
+
 Above each document, you'll see options to view:
 
 **Semantic Groups** (click to highlight):
+
 - Drugs (medications)
 - Disorders (diagnoses)
 - Procedures
 - Anatomy
 
 **Annotations** (click to underline):
+
 - Negation (red underline): "no chest pain"
 - Uncertainty (purple underline): "possible diabetes"
 - Non-patient (blue underline): "mother has diabetes"
@@ -256,6 +286,7 @@ Above each document, you'll see options to view:
 Filters help you focus on specific subsets of patients or documents.
 
 ### Add a Date Filter
+
 Let's find diabetes patients seen in the last year:
 
 1. Click **Patients** → **All Local Patients** (start fresh)
@@ -267,6 +298,7 @@ Let's find diabetes patients seen in the last year:
 1. Notice the filter appears at the top of screen
 
 ### Add Other Filters
+
 Common filters include:
 - **Patient Demographics:** Age, sex, race
 - **Document Types:** Progress notes, discharge summaries, etc.
@@ -274,11 +306,13 @@ Common filters include:
 - **Age at Document Date:** Patient's age when note was written
 
 To apply:
+
 1. Check boxes for what you want to include
 1. Yellow bar appears next to active filter categories
 1. Filter names show at top of screen
 
 ### Search with Filters Applied
+
 1. Click **Terms**
 1. Enter your search terms (e.g., `diabetes`)
 1. Click **Find Patients**
@@ -291,6 +325,7 @@ To apply:
 Let's find all mentions of medications for one specific patient:
 
 ### Create a Single Patient List
+
 1. Click **Patients** → **Patient List** → **Add/Upload**
 1. Enter one patient's MRN (medical record number)
 1. Click **Add Patients**
@@ -298,6 +333,7 @@ Let's find all mentions of medications for one specific patient:
 1. Click **Highlight Documents**
 
 ### Search for Medications
+
 1. Click **Terms**
 1. Clear any previous terms (click **Clear**)
 1. Enter: `medication`
@@ -322,6 +358,7 @@ For more complex searches, use the **Advanced Terms** feature:
 1. You'll see a text box for complex queries
 
 ### Write a Boolean Query
+
 Type exactly as shown (capitalization matters for operators):
 
 ```
@@ -329,6 +366,7 @@ Type exactly as shown (capitalization matters for operators):
 ```
 
 **This searches for:**
+
 - Patients with any diabetes term
 - AND taking any diabetes medication
 - NOT type 1, juvenile, or gestational diabetes
@@ -336,9 +374,11 @@ Type exactly as shown (capitalization matters for operators):
 ### Boolean Rules Reminder:
 
 **Parentheses ()** - Group related terms
+
 - `(diabetes OR DM)` - treats these as one unit
 
 **Quotation marks ""** - Exact phrases
+
 - `"diabetes mellitus"` - finds these words together
 - `diabetes mellitus` - finds both words anywhere
 
@@ -351,6 +391,7 @@ Type exactly as shown (capitalization matters for operators):
 ## Part 8: Using Smart Search Features
 
 ### Using Negation Detection
+
 EMERSE can identify when something is denied:
 
 1. Enter term: `chest pain`
@@ -359,7 +400,9 @@ EMERSE can identify when something is denied:
 1. This finds "chest pain" but NOT "denies chest pain" or "no chest pain"
 
 ### Other Smart Options
+
 For each term, you can set:
+
 - **Uncertainty:** Find only certain or uncertain mentions
 - **Subject:** Patient only or family member mentions
 - **History:** Current or historical mentions
