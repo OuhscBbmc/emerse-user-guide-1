@@ -218,10 +218,12 @@ You'll see a table where:
 <img src = 'images/quick-start/visual-options.png'> <img src = 'images/quick-start/mosaic.png'>
 
 ### Drill Down to See Actual Notes
-1. Click on any cell with numbers (like "5 of 23")
-1. You'll see a list of those 5 documents with previews (Summaries)
+1. Click on a 'Main EHR' cell in 'Overview' table
+1. You'll see a list of documents with previews (Summaries)
 1. Click on any document row to read the full note
 1. Your search terms are highlighted in their assigned colors
+
+> Hint: Use 'Mosaic' view to look for notes with specific terms or combinations of terms highlighted.
 
 ### Navigate Between Documents
 While viewing a document:
@@ -253,7 +255,7 @@ Above each document, you'll see options to view:
 
 Filters help you focus on specific subsets of patients or documents.
 
-### Step 18: Add a Date Filter
+### Add a Date Filter
 Let's find diabetes patients seen in the last year:
 
 1. Click **Patients** → **All Local Patients** (start fresh)
@@ -264,7 +266,7 @@ Let's find diabetes patients seen in the last year:
    - End Date: Today
 1. Notice the filter appears at the top of screen
 
-### Step 19: Add Other Filters
+### Add Other Filters
 Common filters include:
 - **Patient Demographics:** Age, sex, race
 - **Document Types:** Progress notes, discharge summaries, etc.
@@ -276,7 +278,7 @@ To apply:
 1. Yellow bar appears next to active filter categories
 1. Filter names show at top of screen
 
-### Step 20: Search with Filters Applied
+### Search with Filters Applied
 1. Click **Terms**
 1. Enter your search terms (e.g., `diabetes`)
 1. Click **Find Patients**
@@ -288,13 +290,13 @@ To apply:
 
 Let's find all mentions of medications for one specific patient:
 
-### Step 21: Create a Single Patient List
+### Create a Single Patient List
 1. Click **Patients** → **Patient List** → **Add/Upload**
 1. Enter one patient's MRN (medical record number)
 1. Click **Add Patients**
 1. Click **Done**
 
-### Step 22: Search for Medications
+### Search for Medications
 1. Click **Terms**
 1. Clear any previous terms (click **Clear**)
 1. Enter: `medication`
@@ -303,7 +305,7 @@ Let's find all mentions of medications for one specific patient:
 1. Click **Add Highlighted Terms**
 1. Click **Highlight Documents**
 
-### Step 23: Review Single Patient Results
+### Review Single Patient Results
 - The overview shows where medications are mentioned across different document types
 - Click cells to see specific documents
 - All medication-related terms are highlighted
@@ -314,11 +316,11 @@ Let's find all mentions of medications for one specific patient:
 
 For more complex searches, use the **Advanced Terms** feature:
 
-### Step 24: Access Advanced Terms
+### Access Advanced Terms
 1. Click **Terms** → **Advanced Terms** tab
 1. You'll see a text box for complex queries
 
-### Step 25: Write a Boolean Query
+### Write a Boolean Query
 Type exactly as shown (capitalization matters for operators):
 
 ```
@@ -347,7 +349,7 @@ Type exactly as shown (capitalization matters for operators):
 
 ## Part 8: Using Smart Search Features
 
-### Step 26: Using Negation Detection
+### Using Negation Detection
 EMERSE can identify when something is denied:
 
 1. Enter term: `chest pain`
@@ -355,7 +357,7 @@ EMERSE can identify when something is denied:
 1. Select: **"Find positive mentions only"**
 1. This finds "chest pain" but NOT "denies chest pain" or "no chest pain"
 
-### Step 27: Other Smart Options
+### Other Smart Options
 For each term, you can set:
 - **Uncertainty:** Find only certain or uncertain mentions
 - **Subject:** Patient only or family member mentions
@@ -394,13 +396,13 @@ For each term, you can set:
 
 ## Part 10: Saving and Sharing Your Work
 
-### Step 28: Save Your Search Terms
+### Save Your Search Terms
 1. Click **Save** under your terms
 1. Name it descriptively (e.g., "Controlled HTN on ACE inhibitors")
 1. Add description of the logic used
 1. Click **Save**
 
-### Step 29: Share with Colleagues
+### Share with Colleagues
 For Saved Patient Lists:
 1. Click **Sharing** for the list
 1. Enter usernames of team members
@@ -411,7 +413,7 @@ For Saved Terms:
 1. Add specific users or share with all
 1. Others can use but not change your terms
 
-### Step 30: Export Results
+### Export Results
 For Saved Patient Lists:
 1. Click **Export**
 1. Set a password for the Excel file
